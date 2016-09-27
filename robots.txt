@@ -1,0 +1,15 @@
+User-agent: *
+Sitemap: http://www.sapishowroom.it/sitemap.xml
+Allow: /css/
+Allow: /img/
+Allow: /include/
+Allow: /js/
+Allow: /sapi/
+Allow: /index.php
+Allow: /ajax.php
+Allow: /ajax2.php
+Allow: /favicon.png
+Disallow: /cgi-bin/
+Disallow: /backup/
+Disallow: /admin/
+Disallow: /ver.php
