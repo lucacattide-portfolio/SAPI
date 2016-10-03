@@ -7,16 +7,16 @@
         
         	<!--Inizio Account-->
         
-         	<!-- <li>
+         	<li>
             
             	<a href="index.php?pag=account" title="Account">
                 
-                	<i class="zmdi zmdi-account"> <!--Icona--
+                	<i class="zmdi zmdi-account"> <!--Icona-->
                     </i>
                     
                 </a>
              
-            </li> -->
+            </li> 
             
             <!--Fine Account-->
             
