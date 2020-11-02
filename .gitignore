@@ -1,0 +1,9 @@
+/admin/Documentation
+/cgi-bin
+/ver.php
+BK_*
+_notes
+.DS_Store
+.vscode
+._*
+*.LCK

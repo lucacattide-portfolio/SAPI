@@ -481,15 +481,14 @@ function transizioni() {
 	  
 		// Dichiarazione ed Inizializzazione Variabili
 		
-		//var nome = $(this).attr("rel"); // Nome Brands 1
-		var id = $(this).attr("data-id");
+		var nome = $(this).attr("rel"); // Nome Brands 1
 		/*var nome_1 = $("#brands_gallery_menu a[rel='" + $(this).parent().attr("rel") + "']").first().text(); // Nome Brands*/ // CONSERVARE PER FUTURE IMPLEMENTAZIONI
 		/*var imgBrand = $("#brands_carousel div[rel='" + $(this).parent().attr("rel") + "'] .foto").css("background-image");*/ // Immagini Brands // CONSERVARE PER FUTURE IMPLEMENTAZIONI
 		//var imgBrand_1 = $(".brands_1_gallery span[rel='" + $(this).attr("rel") + "'] img").attr("src"); // Immagini Brands 1
 		
-		/*nome = nome.replace("_", " "); // Rimuove l'underscore con lo spazio
-		nome = nome.replace("<p>", ""); // Rimuove i Tags HTML
-		nome = nome.replace("</p>", ""); // "*/
+		nome = nome.replace("_", " "); // Rimuove l'underscore con lo spazio
+		
+		
 		
 		
 		/* DECOMMENTARE IN PRODUZIONE - CONSERVARE PER FUTURE IMPLEMENTAZONI *****************************************************************************************************************************************************
@@ -521,17 +520,10 @@ function transizioni() {
 		*/
 		
 		
-		var Marca = id;
+		var Marca = nome;
 		
 		
-		$.post( "ajax2.php", { marca: Marca }).done(function(date) {
-			 
-			 $(".brand-description-ajax").empty();
-			 $(".brand-description-ajax").html(date);
-			
-		 
-		 });
-		 
+		
 		 $.post( "ajax.php", { marca: Marca }).done(function(date) {
 		 
 		 
@@ -588,12 +580,12 @@ function transizioni() {
 		
 		
 		
-		/*$(".brands_1_gallery div[rel='" + $(this).attr("rel") + "'] img").each(function() {
+		$(".brands_1_gallery div[rel='" + $(this).attr("rel") + "'] img").each(function() {
 		
 			
 			$(".popup.alt .slides-container").append("<img src='" + $(this).attr("src") + "' alt='" + nome + "' />"); // Mostra nella popup tutte le immagini del brand selezionato
 		
-		});*/
+		});
 		
 			
 		/* CONSERVARE PER FUTURE IMPLEMENTAZIONI ************************************************************************************************/
@@ -684,10 +676,10 @@ function transizioni() {
 		
 		// Selezione Links Brands 1
 		
-		/*switch (nome) {
+		switch (nome) {
 		
 			case "paolo pecora":
-
+			
 				$(".link_brand").attr("href", "http://www.paolopecora.com/");
 				$(".link_brand").html("www.paolopecora.com");
 				
@@ -756,10 +748,10 @@ function transizioni() {
 				
 				break;	
 																				
-		}*/
+		}
 						
 		$("#menu_icona").addClass("indietro"); // Nascondi icona menu
-		//$(".popup.alt h2").html(nome); // Inserisci il nome del brand
+		$(".popup.alt h2").html(nome); // Inserisci il nome del brand
 		/*$(".popup.main h2").html(nome_1);*/ // Inserisci il nome del brand // CONSERVARE PER FUTURE IMPLEMENTAZIONI	
 		$(".popup").addClass("animated fadeIn visibile"); // Mostra la finestra modale
 	  
